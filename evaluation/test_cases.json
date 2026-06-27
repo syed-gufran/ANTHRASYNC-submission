@@ -1,0 +1,74 @@
+[
+  {
+    "question": "How many paid leaves do employees get annually?",
+    "expected_keywords": ["24"],
+    "expected_source": "HR_Policy.md",
+    "should_answer": true
+  },
+  {
+    "question": "What is the refund window for customers?",
+    "expected_keywords": ["30 days"],
+    "expected_source": "Customer_Refund_Policy.md",
+    "should_answer": true
+  },
+  {
+    "question": "How long do approved refunds take to process?",
+    "expected_keywords": ["5", "7", "business days"],
+    "expected_source": "Customer_Refund_Policy.md",
+    "should_answer": true
+  },
+  {
+    "question": "How many users does the AcmeCloud Free plan support?",
+    "expected_keywords": ["3"],
+    "expected_source": "Product_Documentation.md",
+    "should_answer": true
+  },
+  {
+    "question": "How often is customer data backed up in AcmeCloud?",
+    "expected_keywords": ["6 hours"],
+    "expected_source": "Product_Documentation.md",
+    "should_answer": true
+  },
+  {
+    "question": "What is the minimum password length required?",
+    "expected_keywords": ["12"],
+    "expected_source": "IT_Security_Guidelines.md",
+    "should_answer": true
+  },
+  {
+    "question": "Within how long must a security incident be reported?",
+    "expected_keywords": ["1 hour"],
+    "expected_source": "IT_Security_Guidelines.md",
+    "should_answer": true
+  },
+  {
+    "question": "What is the daily meal limit during international travel?",
+    "expected_keywords": ["75"],
+    "expected_source": "Expense_Reimbursement_Process.md",
+    "should_answer": true
+  },
+  {
+    "question": "How many days do I have to submit an expense claim?",
+    "expected_keywords": ["30 days"],
+    "expected_source": "Expense_Reimbursement_Process.md",
+    "should_answer": true
+  },
+  {
+    "question": "What is the maternity leave duration?",
+    "expected_keywords": ["26 weeks"],
+    "expected_source": "HR_Policy.md",
+    "should_answer": true
+  },
+  {
+    "question": "What is the company's policy on pet insurance?",
+    "expected_keywords": [],
+    "expected_source": null,
+    "should_answer": false
+  },
+  {
+    "question": "How many vacation days do employees in the Tokyo office get?",
+    "expected_keywords": [],
+    "expected_source": null,
+    "should_answer": false
+  }
+]

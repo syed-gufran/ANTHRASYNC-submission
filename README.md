@@ -1,6 +1,6 @@
 # 📚 Enterprise Knowledge Assistant
 
-A production-minded **Retrieval-Augmented Generation (RAG)** system that answers
+A **Retrieval-Augmented Generation (RAG)** system that answers
 natural-language questions about a company's internal documents — and **cites its
 sources**. Built with **LangChain + LangGraph**, **OpenAI**, and **FAISS**.
 
@@ -9,7 +9,7 @@ sources**. Built with **LangChain + LangGraph**, **OpenAI**, and **FAISS**.
 
 ---
 
-## ✨ What it does
+##  What it does
 
 - **Document ingestion** — loads PDF / Markdown / text files, chunks them, embeds
   them, and stores them in a searchable FAISS index.
@@ -50,8 +50,6 @@ See [`docs/system_design.md`](docs/system_design.md) for the full design documen
 
 ### 1. Prerequisites
 - Python **3.10 – 3.12** recommended.
-  *(Some ML wheels — notably `faiss-cpu` — may not yet publish builds for 3.13/3.14.
-  If you're on a newer Python, create a 3.11/3.12 virtual environment.)*
 - An **OpenAI API key**.
 
 ### 2. Install
@@ -64,7 +62,6 @@ pip install -r requirements.txt
 ### 3. Configure
 ```bash
 cp .env.example .env
-# then edit .env and set OPENAI_API_KEY=sk-...
 ```
 
 ### 4. Build the index
@@ -84,12 +81,11 @@ streamlit run src/app.py
 **REST API**
 ```bash
 uvicorn src.api:app --reload
-# interactive docs at http://localhost:8000/docs
 ```
 
 **One-off CLI check**
 ```bash
-python -m src.rag_graph     # answers a sample question and prints JSON
+python -m src.rag_graph   
 ```
 
 ---
@@ -194,4 +190,3 @@ Full rationale, limitations, and future work are in
 - Documents are text-extractable (no OCR step for scanned PDFs).
 - Sample documents under `data/` are fictional and for demonstration only.
 - No secrets/keys are committed; `.env` is git-ignored.
-# ANTHRASYNC-submission
