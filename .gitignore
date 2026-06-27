@@ -1,7 +1,4 @@
 .env
-.faiss/
-*.faiss
-*.pkl
 __pycache__/
 *.py[cod]
 .venv/
